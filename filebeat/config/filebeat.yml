@@ -1,0 +1,7 @@
+name: "Input agent"
+filebeat.prospectors:
+- type: log
+  paths:
+  - /tmp/logs/*
+output.logstash:
+  hosts: ["logstash:5044"]
